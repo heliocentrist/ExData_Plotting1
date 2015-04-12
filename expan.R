@@ -1,8 +1,8 @@
-#url <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
+url <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
 
-#download.file(url, "expan1.zip", method="curl");
+download.file(url, "expan1.zip", method="curl");
 
-#unzip("expan1.zip", exdir=".");
+unzip("expan1.zip", exdir=".");
 
 consum <- read.csv("household_power_consumption.txt", header = TRUE, sep=";", stringsAsFactors = FALSE);
 
